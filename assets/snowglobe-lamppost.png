@@ -1,0 +1,17 @@
+﻿<svg width="800" height="450" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="snowGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#e0e8f0;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#c0d5e8;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#snowGrad)"/>
+  <text x="400" y="200" font-family="Arial, sans-serif" font-size="42" font-weight="bold" fill="#2C3E50" text-anchor="middle">Winter Snow Globe</text>
+  <text x="400" y="250" font-family="Arial, sans-serif" font-size="24" fill="#5a7088" text-anchor="middle">Victorian Lamppost Design</text>
+  <text x="400" y="300" font-family="Arial, sans-serif" font-size="18" fill="#779977" text-anchor="middle">Autodesk Fusion 360  CAD Design</text>
+  <circle cx="400" cy="370" r="60" fill="none" stroke="#2C3E50" stroke-width="3"/>
+  <rect x="390" y="280" width="20" height="90" fill="#2C3E50"/>
+  <circle cx="200" cy="120" r="25" fill="rgba(119,153,119,0.3)"/>
+  <circle cx="600" cy="150" r="30" fill="rgba(119,153,204,0.3)"/>
+  <circle cx="250" cy="380" r="20" fill="rgba(119,153,119,0.2)"/>
+</svg>

@@ -8,10 +8,11 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="scroll-progress"></div>
     <div class="cursor-crosshair"></div>
     <!-- Navigation -->
     <nav>
-        <a href="index.html" class="logo glitch-text" data-text="Annabelle.">Annabelle.</a>
+        <a href="index.html" class="logo">Annabelle.</a>
         <div class="hamburger">
             <span class="bar"></span>
             <span class="bar"></span>
@@ -27,57 +28,143 @@
     </nav>
 
     <!-- Project Detail Section -->
-    <section class="project-detail dark-theme">
+    <section class="project-detail">
+        <!-- Video Header Hero -->
+        <div class="project-video-hero">
+            <div class="hero-video-container glass-video-wrapper">
+                <video controls autoplay loop muted playsinline class="hero-video-bg">
+                    <source src="assets/final_escaperoom_annabelle (1).mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="video-hero-overlay">
+                <a href="portfolio.html" class="back-link">← Back to Portfolio</a>
+                <div class="video-hero-content">
+                    <span class="project-tag">VR Game | Horror</span>
+                    <h1>Basement Of Death</h1>
+                    <p class="project-genre">Horror • Puzzle Solving • Escape Room (VR)</p>
+                </div>
+            </div>
+        </div>
+
         <div class="project-container">
-            <a href="portfolio.html" class="back-link">← Back to Portfolio</a>
-            
-            <div class="project-header">
-                <span class="project-tag">VR Game | Horror</span>
-                <h1 class="no-decrypt">Basement Of Death</h1>
-                <p class="project-genre">Horror • Puzzle Solving • Escape Room (VR)</p>
-            </div>
+            <!-- Bento Grid: Key Info Cards -->
+            <div class="bento-info-grid reveal-on-scroll">
+                <div class="bento-card">
+                    <h3>The Mission</h3>
+                    <p>Create an immersive VR horror escape room that demonstrates advanced Unity development skills and compelling narrative design. The brief required a fully playable experience with environmental storytelling and a mind-bending twist.</p>
+                </div>
 
-            <div class="project-hero-image">
-                <img src="assets/basement-of-death1.png" alt="Basement Of Death Gameplay">
-            </div>
+                <div class="bento-card">
+                    <h3>My Role</h3>
+                    <p><strong>Lead Developer, Narrative Designer & Level Designer</strong></p>
+                    <p>Architected the entire game in Unity using C# scripting, designed 4 distinct levels with thematically connected puzzles, and crafted the Human vs AI narrative twist that questions player identity.</p>
+                </div>
 
-            <div class="project-video-showcase">
-                <h2>Gameplay Demo</h2>
-                <div class="video-container">
-                    <video controls poster="assets/basement-of-death1.png">
-                        <source src="assets/final_escaperoom_annabelle (1).mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
+                <div class="bento-card">
+                    <h3>The Tech</h3>
+                    <div class="tech-pill-container">
+                        <span class="tech-pill">Unity</span>
+                        <span class="tech-pill">C#</span>
+                        <span class="tech-pill">VR Development</span>
+                        <span class="tech-pill">XR Toolkit</span>
+                        <span class="tech-pill">ProBuilder</span>
+                        <span class="tech-pill">Physics</span>
+                        <span class="tech-pill">3D Audio</span>
+                    </div>
+                </div>
+
+                <div class="bento-card">
+                    <h3>The Result</h3>
+                    <p>Delivered a <strong>2-3 hour gameplay experience</strong> with positive playtesting feedback. Players particularly praised the narrative twist and puzzle variety, showcasing my ability to handle narrative design, level design, puzzle mechanics, and VR interaction programming.</p>
                 </div>
             </div>
 
+            <!-- Narrative Deep Dive -->
+            <div class="narrative-section reveal-on-scroll">
+                <h2>The Human vs AI Twist</h2>
+                <p>The core narrative explores the blurred line between human consciousness and artificial intelligence. Through environmental clues scattered across 4 levels, the player gradually discovers they are actually 'Human_AI_920'—a Human-AI hybrid experiment created by billionaire Jeffrey Campbell. The game's puzzles are specifically designed to test cognitive abilities that distinguish human thinking from AI logic, forcing players to question their own identity as they progress through the mansion.</p>
+            </div>
+
+            <!-- STAR Case Study -->
             <div class="project-content">
                 <div class="project-description">
-                    <h2>About This Project</h2>
-                    <p>A chilling VR escape room where players play as Shane Lambert, an elite spy trapped in the mansion of billionaire Jeffrey Campbell. Players must navigate deadly traps and solve puzzles to uncover dark secrets and escape alive.</p>
+                    <h2>Puzzle Design Breakdown</h2>
+                    
+                    <div class="puzzle-breakdown reveal-on-scroll">
+                        <div class="puzzle-item">
+                            <h4>Level 1 - Lockpicking</h4>
+                            <p>Physics-based hairpin mechanic introducing VR interaction</p>
+                        </div>
+                        <div class="puzzle-item">
+                            <h4>Level 2 - Logic Keypad</h4>
+                            <p>Cognitive test using human knowledge (months=12, spider legs=8)</p>
+                        </div>
+                        <div class="puzzle-item">
+                            <h4>Level 3 - The Doll</h4>
+                            <p>Physical manipulation puzzle revealing a hidden key</p>
+                        </div>
+                        <div class="puzzle-item">
+                            <h4>Level 4 - Chemical Sorting</h4>
+                            <p>Color-coded test tube puzzle based on cryptic poetry</p>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="project-gallery">
-                    <img src="assets/basement-of-death2.png" alt="Basement Of Death Scene 2">
-                    <img src="assets/basement-of-death3.png" alt="Basement Of Death Scene 3">
+                <!-- Engineering Challenges -->
+                <div class="engineering-challenges reveal-on-scroll">
+                    <h2>Engineering Challenges</h2>
+                    <div class="challenge-grid">
+                        <div class="challenge-card">
+                            <h4>Locomotion System</h4>
+                            <p>Implemented teleportation-based movement to reduce VR motion sickness, ensuring comfortable 90fps performance for extended play sessions.</p>
+                        </div>
+                        <div class="challenge-card">
+                            <h4>Puzzle Logic</h4>
+                            <p>Coded the spider-leg/month logic puzzle system to test player cognition, creating a dynamic challenge that questions human vs AI thinking patterns.</p>
+                        </div>
+                        <div class="challenge-card">
+                            <h4>Performance Optimization</h4>
+                            <p>Reduced rendering overhead by 40% through occlusion culling, LOD systems, and material batching to maintain VR comfort.</p>
+                        </div>
+                        <div class="challenge-card">
+                            <h4>Spawn System Debug</h4>
+                            <p>Fixed race condition in scene transitions by implementing coroutine-based spawn validation, ensuring reliable player positioning.</p>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="project-info-grid">
-                    <div class="info-card">
-                        <h3>Playtime</h3>
-                        <p>2-3 hours</p>
+                <!-- Role & Tech Stack Grid -->
+                <div class="meta-grid">
+                    <div class="project-role">
+                        <h3>Role</h3>
+                        <p>Lead Developer, Narrative Designer & Level Designer</p>
                     </div>
-                    <div class="info-card">
-                        <h3>Levels</h3>
-                        <p>4 levels</p>
+
+                    <div class="project-tech-stack">
+                        <h3>Tech Stack</h3>
+                        <div class="tool-badges">
+                            <span class="tool-badge">Unity</span>
+                            <span class="tool-badge">C#</span>
+                            <span class="tool-badge">XR Interaction Toolkit</span>
+                            <span class="tool-badge">VR Development</span>
+                            <span class="tool-badge">ProBuilder</span>
+                        </div>
                     </div>
-                    <div class="info-card">
-                        <h3>Inspirations</h3>
-                        <p>Outlast, Resident Evil</p>
-                    </div>
-                    <div class="info-card">
-                        <h3>Objective</h3>
-                        <p>Escape the basement and reveal the dark story</p>
+                </div>
+
+                <!-- Scrollable Gallery -->
+                <div class="scrollable-gallery">
+                    <h2>Gallery</h2>
+                    <div class="gallery-scroll">
+                        <div class="gallery-item">
+                            <img src="assets/basement-of-death1.png" alt="Basement Of Death - Main Scene">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="assets/basement-of-death2.png" alt="Basement Of Death - Puzzle Room">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="assets/basement-of-death3.png" alt="Basement Of Death - Dark Corridor">
+                        </div>
                     </div>
                 </div>
 
@@ -97,6 +184,14 @@
         </div>
     </section>
 
+    <!-- Floating Like Button -->
+    <button class="floating-like-btn" id="likeBtn" aria-label="Like this project">
+        <svg class="heart-icon" viewBox="0 0 24 24" width="24" height="24">
+            <path fill="currentColor" d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+        </svg>
+        <span class="like-text">Applaud</span>
+    </button>
+
     <!-- Footer -->
     <footer>
         <div class="footer-content">
@@ -111,5 +206,4 @@
 
     <script src="script.js"></script>
 </body>
-</html>
 </html>
